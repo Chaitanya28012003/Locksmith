@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency Help | KeyGuard Locksmith Services</title>
+
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="emergency.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- TOP HEADER -->
+    <header class="emergency-header">
+        
+
+        <div class="header-controls">
+            <button class="icon-control" id="rtlToggle" type="button"
+                    aria-label="Toggle right to left">
+               <i data-lucide="arrow-left-right"></i>
+            </button>
+
+            <button class="icon-control" id="themeToggle" type="button"
+                    aria-label="Toggle dark mode">
+                <i data-lucide="moon"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <!-- EMERGENCY INTRO -->
+    <main class="emergency-page">
+
+        <section class="emergency-intro">
+            <a href="home.html" class="back-link">
+                
+               
+            </a>
+
+            <div class="brand-intro">
+                <img src="imges/logo1.jpeg" alt="KeyGuard Locksmith Logo">
+                <div>
+                    <h2>Key<span>Guard</span></h2>
+                    <p>Secure. Reliable. 24/7.</p>
+                </div>
+            </div>
+
+            <span class="intro-label">
+                <span class="status-dot"></span>
+                EMERGENCY LOCKSMITH ASSISTANCE
+            </span>
+
+            <h1>
+                Need Emergency Help?
+                <span>We're Here.</span>
+            </h1>
+
+            <p class="intro-description">
+                Locked out, lost your keys, or dealing with a damaged lock?
+                Tell us what happened and share your contact details so you
+                can request locksmith assistance.
+            </p>
+
+            <div class="intro-points">
+                <span><i data-lucide="shield-check"></i> Security focused</span>
+                <span><i data-lucide="phone"></i> Direct contact</span>
+                <span><i data-lucide="key-round"></i> Locksmith support</span>
+            </div>
+        </section>
+
+
+        <!-- EMERGENCY FORM CARD -->
+        <section class="emergency-card">
+
+            <div class="form-heading">
+                <span class="form-eyebrow">WE'RE READY TO LISTEN</span>
+                <h2>Emergency Request</h2>
+                <p>Tell us a little about the situation.</p>
+            </div>
+
+            <form id="emergencyForm">
+
+                <div class="form-grid">
+
+                    <div class="form-field">
+                        <label for="fullName">Full Name *</label>
+                        <div class="input-wrap">
+                            <i data-lucide="user-round"></i>
+                            <input type="text" id="fullName" name="fullName"
+                                   placeholder="Enter your full name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="phone">Phone Number *</label>
+                        <div class="input-wrap">
+                            <i data-lucide="phone"></i>
+                            <input type="tel" id="phone" name="phone"
+                                   placeholder="+91 XXXXX XXXXX"
+                                   autocomplete="tel" required>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Email Address</label>
+                        <div class="input-wrap">
+                            <i data-lucide="mail"></i>
+                            <input type="email" id="email" name="email"
+                                   placeholder="you@example.com">
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="emergencyType">Emergency Type *</label>
+                        <div class="input-wrap select-wrap">
+                            <i data-lucide="settings-2"></i>
+                            <select id="emergencyType" name="emergencyType" required>
+                                <option value="">Select an emergency</option>
+                                <option>Home Lockout</option>
+                                <option>Car Lockout</option>
+                                <option>Lost or Stolen Keys</option>
+                                <option>Broken Key in Lock</option>
+                                <option>Damaged or Jammed Lock</option>
+                                <option>Lock Replacement</option>
+                                <option>Business Lockout</option>
+                                <option>Other Emergency</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-field full-width">
+                        <label for="location">Your Current Location *</label>
+                        <div class="input-wrap">
+                            <i data-lucide="map-pin"></i>
+                            <input type="text" id="location" name="location"
+                                   placeholder="Area, street, city or landmark"
+                                   required>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="preferredTime">Preferred Contact Time</label>
+                        <div class="input-wrap">
+                            <i data-lucide="clock"></i>
+                            <select id="preferredTime" name="preferredTime">
+                                <option value="">Select a time</option>
+                                <option>As soon as possible</option>
+                                <option>Within 30 minutes</option>
+                                <option>Within one hour</option>
+                                <option>Schedule a call</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="contactMethod">Contact Method</label>
+                        <div class="input-wrap">
+                            <i data-lucide="message-circle"></i>
+                            <select id="contactMethod" name="contactMethod">
+                                <option value="Phone Call">Phone Call</option>
+                                <option value="SMS">SMS</option>
+                                <option value="Email">Email</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-field full-width">
+                        <label for="details">Describe the Problem *</label>
+                        <textarea id="details" name="details"
+                                  placeholder="Briefly explain what happened and what help you need..."
+                                  rows="4" required></textarea>
+                    </div>
+
+                </div>
+
+                <label class="consent-check">
+                    <input type="checkbox" id="consent" required>
+                    <span>I agree to be contacted regarding this emergency request. *</span>
+                </label>
+
+                <button type="submit" class="submit-btn">
+                    <span>Request Emergency Assistance</span>
+                    <i data-lucide="arrow-up-right"></i>
+                </button>
+
+                <p class="form-note">
+                    <i data-lucide="lock-keyhole"></i>
+                    Please provide accurate contact and location details.
+                    Submitting this form does not confirm a booking.
+                </p>
+
+                <div id="formMessage" class="form-message" role="status"
+                     aria-live="polite"></div>
+
+            </form>
+        </section>
+
+
+        
+
+
+   
+
+
+    <script src="emergency.js"></script>
+</body>
+</html>

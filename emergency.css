@@ -1,0 +1,1138 @@
+
+:root {
+    --em-navy: #102B46;
+    --em-navy-dark: #0A1E32;
+    --em-gold: #F5B840;
+    --em-gold-dark: #D99A1D;
+    --em-bg: #F4F7F5;
+    --em-card: #FFFFFF;
+    --em-input: #F4F7F5;
+    --em-text: #18212B;
+    --em-muted: #687786;
+    --em-border: #DCE5E2;
+    --em-shadow: 0 20px 60px rgba(16, 43, 70, .08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--em-bg);
+    color: var(--em-text);
+    font-family: "DM Sans", sans-serif;
+    transition: background .3s ease, color .3s ease;
+}
+
+body.dark-mode {
+    --em-bg: #0B1723;
+    --em-card: #122438;
+    --em-input: #0D1D2D;
+    --em-text: #F2F5F8;
+    --em-muted: #B1BECA;
+    --em-border: #2A4053;
+    --em-shadow: 0 20px 60px rgba(0, 0, 0, .2);
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.emergency-header {
+    width: min(1240px, calc(100% - 48px));
+    min-height: 82px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand,
+.brand-intro,
+.footer-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-logo {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--em-gold);
+}
+
+.brand-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.brand-name,
+.brand-intro h2,
+.footer-brand > span {
+    margin: 0;
+    color: var(--em-navy);
+    font: 700 27px/1 "Cormorant Garamond", serif;
+}
+
+body.dark-mode .brand-name,
+body.dark-mode .brand-intro h2,
+body.dark-mode .footer-brand > span {
+    color: #FFFFFF;
+}
+
+.brand-name span,
+.brand-intro h2 span,
+.footer-brand > span span {
+     --em-gold-dark: #D99A1D;
+}
+
+.brand-caption {
+    color: var(--em-muted);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .8px;
+}
+
+.header-controls {
+    display: flex;
+    gap: 12px;
+}
+
+.icon-control {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--em-gold-dark);
+    border-radius: 50%;
+    background: var(--em-card);
+    color: var(--em-navy);
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(16, 43, 70, .06);
+    transition: transform .25s ease, border-color .25s ease;
+}
+
+.icon-control:hover {
+    transform: translateY(-3px);
+    border-color: var(--em-gold);
+}
+
+body.dark-mode .icon-control {
+    color: var(--em-gold);
+}
+
+.icon-control svg {
+    width: 20px;
+    height: 20px;
+}
+
+.emergency-page {
+    width: min(970px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 18px 0 72px;
+}
+
+.emergency-intro {
+    text-align: center;
+    padding: 10px 0 38px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    float: left;
+    color: var(--em-muted);
+    font-size: 12px;
+    font-weight: 700;
+    transition: color .2s ease;
+}
+
+.back-link:hover {
+    color: var(--em-gold-dark);
+}
+
+.back-link svg {
+    width: 15px;
+    height: 15px;
+}
+
+.brand-intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 18px auto 20px;
+    padding-right: 20px;
+    transform: translateX(280px);
+}
+
+.brand-intro img {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--em-gold);
+}
+
+.brand-intro > div {
+    text-align: left;
+}
+
+.brand-intro h2 {
+    font-size: 30px;
+}
+
+.brand-intro p {
+    margin: 4px 0 0;
+    color: var(--em-muted);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .5px;
+}
+
+.intro-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin: 0 0 12px;
+    color: var(--em-gold-dark);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--em-gold);
+    box-shadow: 0 0 0 4px rgba(245, 184, 64, .15);
+}
+
+.emergency-intro h1 {
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--em-text);
+    font: 700 clamp(42px, 6.3vw, 76px)/.98 "Cormorant Garamond", serif;
+    letter-spacing: -1.5px;
+}
+
+/* Light mode — Primary color */
+.emergency-intro h1 span {
+    color: var(--primary);
+    font-style: italic;
+}
+
+/* Dark mode — Your selected blue color */
+body.dark-mode .emergency-intro h1 span {
+    color: #6EA4D2;
+}
+
+.intro-description {
+    max-width: 650px;
+    margin: 20px auto 0;
+    color: var(--em-muted);
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.intro-points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 24px;
+    margin-top: 22px;
+}
+
+.intro-points span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--em-muted);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.intro-points svg {
+    width: 16px;
+    height: 16px;
+    color: var(--em-gold-dark);
+}
+
+.emergency-card {
+    padding: 42px 48px 38px;
+    border: 1px solid var(--em-border);
+    border-radius: 30px;
+    background: var(--em-card);
+    box-shadow: var(--em-shadow);
+}
+
+.form-heading {
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid var(--em-border);
+}
+
+.form-eyebrow {
+    color: var(--em-gold-dark);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.form-heading h2 {
+    margin: 10px 0 2px;
+    color: var(--em-text);
+    font: 700 clamp(32px, 4vw, 43px)/1.1 "Cormorant Garamond", serif;
+}
+
+.form-heading p {
+    margin: 7px 0 0;
+    color: var(--em-muted);
+    font-size: 14px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.form-field {
+    min-width: 0;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 9px;
+    color: var(--em-text);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.input-wrap {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 15px;
+    border: 1px solid var(--em-border);
+    border-radius: 13px;
+    background: var(--em-input);
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.input-wrap:focus-within,
+.form-field textarea:focus {
+    outline: none;
+    border-color: var(--em-gold-dark);
+    box-shadow: 0 0 0 3px rgba(245, 184, 64, .15);
+}
+
+.input-wrap > svg {
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+    color: var(--em-muted);
+}
+
+.input-wrap input,
+.input-wrap select {
+    width: 100%;
+    min-width: 0;
+    height: 46px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    color: var(--em-text);
+    background: transparent;
+    font-size: 13px;
+}
+
+.input-wrap input::placeholder,
+.form-field textarea::placeholder {
+    color: var(--em-muted);
+    opacity: 1;
+}
+
+.input-wrap select {
+    cursor: pointer;
+}
+
+.input-wrap select option {
+    color: #18212B;
+    background: #FFFFFF;
+}
+
+.form-field textarea {
+    display: block;
+    width: 100%;
+    min-height: 115px;
+    padding: 14px 15px;
+    border: 1px solid var(--em-border);
+    border-radius: 13px;
+    outline: 0;
+    resize: vertical;
+    color: var(--em-text);
+    background: var(--em-input);
+    font-size: 13px;
+    line-height: 1.7;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.consent-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 24px 0;
+    color: var(--em-muted);
+    font-size: 12px;
+    line-height: 1.7;
+    cursor: pointer;
+}
+
+.consent-check input {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    accent-color: var(--em-navy);
+}
+
+.submit-btn {
+    width: 100%;
+    min-height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 22px;
+    border: 1px solid var(--em-gold-dark);
+    border-radius: 13px;
+    background: var(--em-gold);
+    color: #14283A;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background .25s ease, transform .25s ease;
+}
+
+.submit-btn:hover {
+    background: #FFD16B;
+    transform: translateY(-2px);
+}
+
+.submit-btn svg {
+    width: 19px;
+    height: 19px;
+}
+
+.form-note {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    margin: 17px 0 0;
+    color: var(--em-muted);
+    font-size: 11px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.form-note svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.form-message {
+    display: none;
+    margin-top: 18px;
+    padding: 14px 16px;
+    border: 1px solid var(--em-border);
+    border-radius: 12px;
+    color: var(--em-text);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.form-message.show {
+    display: block;
+}
+
+.form-message.error {
+    border-color: #D97777;
+}
+
+.call-alternative {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-top: 24px;
+    padding: 22px 25px;
+    border: 1px solid var(--em-border);
+    border-radius: 20px;
+    background: var(--em-card);
+}
+
+.call-icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: rgba(245, 184, 64, .18);
+    color: var(--em-gold-dark);
+}
+
+.call-icon svg {
+    width: 21px;
+    height: 21px;
+}
+
+.call-copy {
+    flex: 1;
+}
+
+.call-copy h3 {
+    margin: 0;
+    color: var(--em-text);
+    font: 700 23px/1.2 "Cormorant Garamond", serif;
+}
+
+.call-copy p {
+    margin: 5px 0 0;
+    color: var(--em-muted);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.call-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px 18px;
+    border: 1px solid var(--em-navy);
+    border-radius: 11px;
+    background: var(--em-navy);
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: background .2s ease;
+}
+
+.call-btn:hover {
+    background: var(--em-navy-dark);
+}
+
+.call-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.emergency-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px 22px;
+    padding: 24px 20px;
+    border-top: 1px solid var(--em-border);
+    color: var(--em-muted);
+    text-align: center;
+}
+
+.footer-brand img {
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.footer-brand > span {
+    font-size: 23px;
+}
+
+.emergency-footer p,
+.emergency-footer small {
+    font-size: 11px;
+}
+
+.emergency-footer > a:not(.footer-brand) {
+    color: var(--em-text);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.emergency-footer > a:not(.footer-brand):hover {
+    color: var(--em-gold-dark);
+}
+
+/* RTL */
+body.rtl {
+    direction: rtl;
+}
+
+body.rtl .back-link {
+    float: right;
+}
+
+body.rtl .brand-intro > div {
+    text-align: right;
+}
+
+body.rtl .input-wrap input,
+body.rtl .input-wrap select,
+body.rtl .form-field textarea {
+    text-align: right;
+}
+
+body.rtl .call-alternative {
+    direction: rtl;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .emergency-header {
+        width: calc(100% - 30px);
+        min-height: 72px;
+    }
+
+    .brand-logo {
+        width: 46px;
+        height: 46px;
+    }
+
+    .brand-name {
+        font-size: 23px;
+    }
+
+    .brand-caption {
+        font-size: 8px;
+    }
+
+    .icon-control {
+        width: 42px;
+        height: 42px;
+    }
+
+    .emergency-page {
+        width: calc(100% - 28px);
+        padding-top: 15px;
+    }
+
+    .emergency-intro {
+        padding-bottom: 28px;
+    }
+
+    .brand-intro {
+        margin-top: 40px;
+    }
+
+    .emergency-intro h1 {
+        font-size: clamp(41px, 10vw, 58px);
+    }
+
+    .intro-description {
+        font-size: 13px;
+    }
+
+    .intro-points {
+        gap: 12px;
+    }
+
+    .emergency-card {
+        padding: 30px 22px;
+        border-radius: 22px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .call-alternative {
+        flex-wrap: wrap;
+        padding: 18px;
+    }
+
+    .call-copy {
+        min-width: 150px;
+    }
+
+    .call-btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .brand-caption {
+        letter-spacing: 0;
+    }
+
+    .header-controls {
+        gap: 7px;
+    }
+
+    .brand {
+        gap: 7px;
+    }
+
+    .emergency-card {
+        padding: 25px 16px;
+    }
+
+    .intro-label {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
+}
+
+/* Move logo and text to the left */
+.emergency-intro .brand-intro {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 18px auto 20px;
+    padding: 0;
+    text-align: left;
+}
+
+.emergency-intro .brand-intro > div {
+    text-align: left;
+}
+
+/* Keep Dark and RTL buttons at the top-right */
+.emergency-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: min(1240px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+/* RTL layout */
+body.rtl .emergency-intro .brand-intro {
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+body.rtl .emergency-intro .brand-intro > div {
+    text-align: right;
+}
+
+@media (max-width: 700px) {
+    .emergency-intro .brand-intro {
+        margin-top: 25px;
+    }
+
+    .emergency-header {
+        width: calc(100% - 30px);
+    }
+}
+/* Move the entire page content upward */
+.emergency-page {
+    padding-top: 0;
+    margin-top: -60px;
+}
+
+/* Reduce space above the logo */
+.emergency-intro {
+    padding-top: 0;
+}
+
+/* Reduce space around the logo */
+.emergency-intro .brand-intro {
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+/* ===== Emergency Page Layout Fix ===== */
+
+.emergency-page {
+    width: min(970px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 18px 0 48px;
+}
+
+/* Logo and text alignment */
+.emergency-intro .brand-intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 800px;
+    margin: 18px auto 20px;
+    padding: 0;
+    transform: none;
+    gap: 12px;
+}
+
+.emergency-intro .brand-intro img {
+    width: 62px;
+    height: 62px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.emergency-intro .brand-intro > div {
+    text-align: left;
+}
+
+.emergency-intro .brand-intro h2 span {
+    color: var(--em-gold-dark);
+}
+
+body.dark-mode .emergency-intro .brand-intro h2 span {
+    color: var(--em-gold);
+}
+
+/* Dark mode text and form visibility */
+body.dark-mode .emergency-intro h1 {
+    color: var(--em-text);
+}
+
+body.dark-mode .form-field label {
+    color: var(--em-text);
+}
+
+body.dark-mode .input-wrap input,
+body.dark-mode .input-wrap select,
+body.dark-mode .form-field textarea {
+    color: var(--em-text);
+}
+
+body.dark-mode .input-wrap select option {
+    background: #122438;
+    color: #F2F5F8;
+}
+
+/* RTL layout */
+body.rtl {
+    direction: rtl;
+}
+
+body.rtl .emergency-intro .brand-intro {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+body.rtl .emergency-intro .brand-intro > div {
+    text-align: right;
+}
+
+body.rtl .input-wrap {
+    flex-direction: row;
+}
+
+body.rtl .input-wrap input,
+body.rtl .input-wrap select,
+body.rtl .form-field textarea {
+    text-align: right;
+}
+
+/* Keep buttons visible and aligned */
+.header-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.icon-control {
+    flex-shrink: 0;
+}
+
+/* Tablet and mobile screens */
+@media (max-width: 700px) {
+    .emergency-header {
+        width: calc(100% - 30px);
+        min-height: 65px;
+    }
+
+    .emergency-page {
+        width: calc(100% - 30px);
+        margin: 0 auto;
+        padding: 12px 0 32px;
+    }
+
+    .emergency-intro {
+        padding: 8px 0 26px;
+        text-align: center;
+    }
+
+    .emergency-intro .brand-intro {
+        max-width: 100%;
+        margin: 12px 0 22px;
+        transform: none;
+    }
+
+    .emergency-intro .brand-intro img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .emergency-intro .brand-intro h2 {
+        font-size: 26px;
+    }
+
+    .emergency-intro h1 {
+        font-size: clamp(38px, 9vw, 56px);
+        line-height: 1.05;
+        overflow-wrap: break-word;
+    }
+
+    .intro-description {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .intro-points {
+        justify-content: center;
+        gap: 10px 15px;
+    }
+
+    .emergency-card {
+        padding: 26px 18px;
+        border-radius: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .full-width {
+        grid-column: 1 / -1;
+    }
+
+    .call-alternative {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 17px;
+    }
+
+    .call-copy {
+        min-width: 0;
+    }
+
+    .call-btn {
+        width: 100%;
+    }
+}
+
+/* Very small mobile screens */
+@media (max-width: 380px) {
+    .emergency-header {
+        width: calc(100% - 22px);
+    }
+
+    .header-controls {
+        gap: 7px;
+    }
+
+    .icon-control {
+        width: 40px;
+        height: 40px;
+    }
+
+    .emergency-page {
+        width: calc(100% - 24px);
+    }
+
+    .emergency-card {
+        padding: 22px 14px;
+    }
+
+    .intro-label {
+        font-size: 9px;
+        letter-spacing: 0.8px;
+    }
+}
+/* Center Logo and Logo Text */
+
+.emergency-intro .brand-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+    margin: 5px auto 20px;
+    padding: 0;
+    transform: none;
+    gap: 12px;
+}
+/* Move Emergency Page Slightly Up */
+.emergency-page {
+    margin-top: -45px;
+}
+/* Move Logo and Logo Text Slightly Left */
+.emergency-intro .brand-intro {
+    position: relative;
+    left: -20px;
+}
+
+.emergency-intro .brand-intro > div {
+    text-align: left;
+}
+
+/* Keep Logo Centered in RTL Mode Too */
+
+body.rtl .emergency-intro .brand-intro {
+    justify-content: center;
+}
+/* ===== Complete RTL Layout Fix ===== */
+
+body.rtl {
+    direction: rtl;
+}
+
+/* Dark and RTL buttons stay at the top-right */
+body.rtl .emergency-header {
+    direction: ltr;
+    justify-content: flex-end;
+}
+
+body.rtl .header-controls {
+    direction: ltr;
+    justify-content: flex-end;
+}
+
+/* Center logo and reverse its layout in RTL */
+body.rtl .emergency-intro .brand-intro {
+    direction: rtl;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body.rtl .emergency-intro .brand-intro > div {
+    text-align: right;
+}
+
+/* Back link */
+body.rtl .back-link {
+    float: right;
+}
+
+/* Form fields and labels */
+body.rtl .form-grid {
+    direction: rtl;
+}
+
+body.rtl .form-field {
+    direction: rtl;
+    text-align: right;
+}
+
+body.rtl .input-wrap {
+    direction: rtl;
+    flex-direction: row;
+}
+
+body.rtl .input-wrap input,
+body.rtl .input-wrap select,
+body.rtl .form-field textarea {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Keep English sentences and punctuation readable */
+body.rtl .emergency-intro h1,
+body.rtl .intro-description,
+body.rtl .form-heading,
+body.rtl .form-note,
+body.rtl .submit-btn {
+    direction: ltr;
+    unicode-bidi: isolate;
+}
+
+body.rtl .intro-points {
+    direction: rtl;
+    flex-direction: row;
+}
+
+/* Mobile RTL layout */
+@media (max-width: 700px) {
+    body.rtl .emergency-page {
+        direction: rtl;
+    }
+
+    body.rtl .form-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    body.rtl .emergency-intro .brand-intro {
+        justify-content: center;
+    }
+}
+/* RTL - Headings Alignment */
+
+body.rtl .emergency-intro h1 {
+    direction: rtl;
+    text-align: right;
+}
+
+body.rtl .emergency-intro h1 span {
+    direction: rtl;
+    unicode-bidi: isolate;
+}
+
+body.rtl .form-heading {
+    direction: rtl;
+    text-align: right;
+}
+
+body.rtl .form-heading h2,
+body.rtl .form-heading p {
+    direction: rtl;
+    text-align: right;
+}
+
+body.rtl .intro-description {
+    direction: rtl;
+    text-align: right;
+}

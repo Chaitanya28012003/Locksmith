@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyGuard | Home Premium</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="home2.css">
+   <link rel="icon" type="image/png" href="imges/lock.png">
+</head>
+<body>
+
+<!-- HEADER: Same structure as Home 1 -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <div class="brand-logo">
+        <img src="imges/logo1.jpeg" alt="KeyGuard Logo">
+      </div>
+      <div class="brand-copy">
+        <span class="brand-name"><span>Key</span><strong>Guard</strong></span>
+        <small class="brand-caption">Secure. Reliable. 24/7.</small>
+      </div>
+    </a>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+      <i data-lucide="menu"></i>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <div class="nav-dropdown">
+        <button class="nav-link dropdown-toggle" type="button">
+          Home <i data-lucide="chevron-down"></i>
+        </button>
+        <div class="dropdown-menu">
+          <a href="index.html">Home-Classic</a>
+          <a href="home2.html">Home-Premium</a>
+        </div>
+      </div>
+      <a href="service.html" class="nav-link">Services</a>
+      <a href="Pricing.html" class="nav-link">Pricing</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="emergency.html" class="mobile-emergency-link">
+  <i data-lucide="phone-call"></i>
+  <span>Emergency Help</span>
+</a>
+    </nav>
+
+     <div class="header-actions">
+      <button class="header-icon-btn circle-btn" id="rtlToggle"
+        type="button" aria-label="Toggle RTL" title="Toggle RTL">
+        <i data-lucide="arrow-left-right"></i>
+      </button>
+      <button class="header-icon-btn circle-btn" id="themeToggle"
+        type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <i data-lucide="moon" id="themeIcon"></i>
+      </button>
+      <a href="emergency.html" class="header-cta">
+          <i data-lucide="phone-call"></i>
+          Emergency Help
+        </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- SECTION 1: PREMIUM HERO -->
+  <section class="hero2">
+    <div class="hero2-bg">
+      <img src="imges/home hero.jpeg" alt="Professional locksmith securing a door">
+    </div>
+    <div class="hero2-overlay"></div>
+    <div class="container hero2-inner">
+      <div class="hero2-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span><i data-lucide="shield-check"></i> Your Security. Our Priority.</div>
+        <h1>Confidence Starts<br>With <span>Secure Access.</span></h1>
+        <p>From urgent lockouts to advanced lock upgrades, KeyGuard delivers dependable locksmith solutions designed around your home, vehicle and business.</p>
+        <div class="hero-buttons">
+          <a href="contact.html" class="btn btn-primary"><i data-lucide="phone-call"></i> Request Assistance</a>
+          <a href="service.html" class="btn btn-outline">Explore Our Services <i data-lucide="arrow-up-right"></i></a>
+        </div>
+        <div class="hero2-proof">
+          <div><strong>24/7</strong><span>Emergency Support</span></div>
+          <div><strong>Fast</strong><span>Local Response</span></div>
+          <div><strong>Trusted</strong><span>Security Solutions</span></div>
+        </div>
+      </div>
+     
+  </section>
+
+  <!-- SECTION 2: SERVICES OVERVIEW -->
+  <section class="section2 service-overview">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div class="eyebrow dark-eyebrow"><span class="eyebrow-line"></span> Our Expertise</div>
+        <h2>One Trusted Team.<br><span>Complete Lock Solutions.</span></h2>
+        <p>Practical, professional locksmith services for everyday security needs and unexpected situations.</p>
+      </div>
+
+      <div class="premium-service-grid">
+        <article class="premium-service-card reveal">
+          
+        
+        
+          <div class="premium-service-img"><img
+    src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=900&q=85"
+    alt="Automotive Locksmith Vehicle Service"
+    loading="lazy"
+>
+<span>01</span></div>
+          <div class="premium-service-body"><i data-lucide="car-front"></i><h3>Vehicle Lockouts</h3><p>Get help when your keys are locked inside your vehicle.</p><a href="service.html">Explore service <i data-lucide="arrow-up-right"></i></a></div>
+        </article>
+        <article class="premium-service-card reveal delay-1">
+          <div class="premium-service-img"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Secure residential property"><span>02</span></div>
+          <div class="premium-service-body"><i data-lucide="house"></i><h3>Home Security</h3><p>Improve everyday peace of mind with practical lock solutions.</p><a href="service.html">Explore service <i data-lucide="arrow-up-right"></i></a></div>
+        </article>
+        <article class="premium-service-card reveal delay-2">
+          <div class="premium-service-img"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85" alt="Commercial office building interior"><span>03</span></div>
+          <div class="premium-service-body"><i data-lucide="building-2"></i><h3>Business Security</h3><p>Access and lock solutions for offices and commercial spaces.</p><a href="service.html">Explore service <i data-lucide="arrow-up-right"></i></a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: EMERGENCY RESPONSE -->
+  <section class="section2 emergency2">
+    <div class="container emergency2-grid">
+      <div class="emergency2-visual reveal">
+        <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1100&q=85" alt="Professional tools ready for locksmith work">
+        <div class="emergency2-badge"><i data-lucide="clock-3"></i><strong>24/7</strong><span>Emergency Help</span></div>
+        <div class="visual-caption"><i data-lucide="shield-check"></i> Ready when you need us</div>
+      </div>
+      <div class="emergency2-copy reveal delay-1">
+        <div class="eyebrow dark-eyebrow"><span class="eyebrow-line"></span> Help Without The Hassle</div>
+        <h2>Unexpected Lockout?<br><span>We've Got You.</span></h2>
+        <p>Being locked out can interrupt your whole day. Our emergency service is designed to help you find a practical way forward with clear communication and professional care.</p>
+        <div class="response-list">
+          <div><span><i data-lucide="check"></i></span><div><h3>Tell Us What Happened</h3><p>Share your location and the type of lockout.</p></div></div>
+          <div><span><i data-lucide="check"></i></span><div><h3>Get Clear Guidance</h3><p>Understand the next steps before work begins.</p></div></div>
+          <div><span><i data-lucide="check"></i></span><div><h3>Restore Access</h3><p>Get professional assistance for your situation.</p></div></div>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Get Emergency Help <i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: WHY CHOOSE US -->
+  <section class="section2 why2">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div class="eyebrow dark-eyebrow"><span class="eyebrow-line"></span> The KeyGuard Difference</div>
+        <h2>Security Made Simple.<br><span>Service Made Personal.</span></h2>
+        <p>We focus on the things that matter: useful advice, careful workmanship and a straightforward service experience.</p>
+      </div>
+      <div class="why2-grid">
+        <article class="why2-card reveal"><span class="why2-number">01</span><div class="why2-icon"><i data-lucide="timer"></i></div><h3>Responsive Support</h3><p>Get in touch when you need help and receive guidance on the next step.</p></article>
+        <article class="why2-card reveal delay-1"><span class="why2-number">02</span><div class="why2-icon"><i data-lucide="badge-check"></i></div><h3>Professional Care</h3><p>We value careful work and respect for your property and entry points.</p></article>
+        <article class="why2-card reveal delay-2"><span class="why2-number">03</span><div class="why2-icon"><i data-lucide="receipt-text"></i></div><h3>Clear Communication</h3><p>Understand the service being discussed before deciding how to proceed.</p></article>
+        <article class="why2-card reveal"><span class="why2-number">04</span><div class="why2-icon"><i data-lucide="house"></i></div><h3>Multiple Property Types</h3><p>Support for residential, vehicle and commercial locksmith needs.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: HOW IT WORKS -->
+  <section class="section2 process2">
+    <div class="container process2-grid">
+      <div class="process2-copy reveal">
+        <div class="eyebrow dark-eyebrow"><span class="eyebrow-line"></span> Simple From Start To Finish</div>
+        <h2>Three Steps To<br><span>Peace Of Mind.</span></h2>
+        <p>Getting locksmith assistance should feel straightforward. Here's how to begin.</p>
+       
+      </div>
+      <div class="process-steps">
+        <article class="process-step reveal"><span class="process-step-num">01</span><div><h3>Reach Out</h3><p>Call or send an enquiry describing your lock, key or access issue.</p></div><i data-lucide="phone-call"></i></article>
+        <article class="process-step reveal delay-1"><span class="process-step-num">02</span><div><h3>Discuss The Solution</h3><p>Explain the problem and ask any questions about the service required.</p></div><i data-lucide="messages-square"></i></article>
+        <article class="process-step reveal delay-2"><span class="process-step-num">03</span><div><h3>Arrange Assistance</h3><p>Confirm the details and arrange the next step with our team.</p></div><i data-lucide="shield-check"></i></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: SECURITY FOR EVERY SPACE -->
+  <section class="section2 spaces2">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div class="eyebrow dark-eyebrow"><span class="eyebrow-line"></span> Solutions For Your Space</div>
+        <h2>From Your Front Door<br><span>To Your Business.</span></h2>
+        <p>Different spaces need different approaches to locks, keys and access. Find the support that fits your situation.</p>
+      </div>
+      <div class="spaces-grid">
+        <article class="space-card reveal">
+         <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Modern Residential Home">
+          <div class="space-shade"></div><div class="space-content"><span>01 / RESIDENTIAL</span><h3>Feel Secure At Home</h3><p>Lock repairs, replacement and spare keys for everyday needs.</p><a href="service.html">Explore home services <i data-lucide="arrow-up-right"></i></a></div>
+        </article>
+        <article class="space-card reveal delay-1">
+           <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85" alt="Car Image">
+           
+          <div class="space-shade"></div><div class="space-content"><span>02 / AUTOMOTIVE</span><h3>Get Back On The Road</h3><p>Lockout assistance for unexpected vehicle access problems.</p><a href="service.html">Explore vehicle services <i data-lucide="arrow-up-right"></i></a></div>
+        </article>
+        <article class="space-card reveal delay-2">
+         <img
+    src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=85"
+    alt="Modern Professional Workspace"
+    loading="lazy"
+>
+          <div class="space-shade"></div><div class="space-content"><span>03 / COMMERCIAL</span><h3>Protect Your Workplace</h3><p>Lock and access solutions for offices and business properties.</p><a href="service.html">Explore business services <i data-lucide="arrow-up-right"></i></a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA: Same Home 1 design, updated Home 2 heading -->
+  <section class="cta-section">
+    <div class="cta-box">
+      <div class="cta-content">
+        <span class="cta-label">YOUR SECURITY STARTS HERE</span>
+        <h2>Need a locksmith?<br><span>Let's find your solution.</span></h2>
+        <p>Contact KeyGuard for professional lock, key duplication and emergency locksmith assistance.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary">Contact Us <i data-lucide="arrow-up-right"></i></a>
+        <a href="tel:+10000000000" class="btn btn-secondary"><i data-lucide="phone"></i> Call Now</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER: Same structure as Home 1 -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="brand footer-logo">
+        <div class="brand-logo"><img src="imges/logo1.jpeg" alt="KeyGuard Logo"></div>
+        <div class="brand-copy">
+          <span class="brand-name"><span>Key</span><strong>Guard</strong></span>
+          <small class="brand-caption">Secure. Reliable. 24/7.</small>
+        </div>
+      </a>
+      <p>Reliable locksmith and key duplication services for homes, vehicles and businesses.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M14 8h3V4h-3c-3.31 0-5 1.69-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.67.33-1 1-1z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M6 8H2V22H6V8ZM4 2C2.9 2 2 2.9 2 4C2 5.1 2.9 6 4 6C5.1 6 6 5.1 6 4C6 2.9 5.1 2 4 2ZM22 13.5C22 9.9 20.1 8 17.2 8C15.5 8 14.4 8.9 13.8 9.8V8H10V22H14V14.8C14 12.9 14.4 11.8 16 11.8C17.6 11.8 18 13 18 14.7V22H22V13.5Z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.6 15.9V8.1l6.5 3.9-6.5 3.9z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a><a href="service.html">Services</a><a href="Pricing.html">Pricing</a><a href="about.html">About Us</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Our Services</h3>
+      <a href="service.html">Lock Repair</a><a href="service.html">Key Duplication</a><a href="service.html">Lock Installation</a><a href="service.html">Car Lockout</a><a href="service.html">Home Security</a><a href="service.html">Business Security</a>
+    </div>
+
+    <div class="footer-column footer-contact">
+      <h3>Contact Us</h3>
+      <div><i data-lucide="map-pin"></i><span>123 Security Street<br>City, State</span></div>
+      <div><i data-lucide="phone"></i><span>+1 000 000 0000</span></div>
+      <div><i data-lucide="mail"></i><span>hello@keyguard.com</span></div>
+      <div><i data-lucide="clock-3"></i><span>Emergency Service: 24/7</span></div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© 2026 KeyGuard Locksmith Services. All Rights Reserved.</p>
+      <div><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="home2.js"></script>
+</body>
+</html>

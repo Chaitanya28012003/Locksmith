@@ -1,0 +1,572 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#163A5F">
+  <title> KeyGuard | Our Services</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="service.css">
+   <link rel="icon" type="image/png" href="imges/lock.png">
+</head>
+<body>
+
+<!-- HEADER: SAME HOME 2 DESIGN -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <div class="brand-logo">
+        <img src="imges/logo1.jpeg" alt="KeyGuard Logo">
+      </div>
+      <div class="brand-copy">
+        <span class="brand-name"><span>Key</span><strong>Guard</strong></span>
+        <small class="brand-caption">Secure. Reliable. 24/7.</small>
+      </div>
+    </a>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn"
+      type="button" aria-label="Open menu" aria-expanded="false">
+      <i data-lucide="menu"></i>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <div class="nav-dropdown">
+        <button class="nav-link dropdown-toggle" type="button"
+          aria-expanded="false">
+          Home <i data-lucide="chevron-down"></i>
+        </button>
+        <div class="dropdown-menu">
+          <a href="index.html">Home-Classic</a>
+          <a href="home2.html">Home-Premium</a>
+        </div>
+      </div>
+      <a href="service.html" class="nav-link active">Services</a>
+      <a href="Pricing.html" class="nav-link">Pricing</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="emergency.html" class="mobile-emergency-link">
+  <i data-lucide="phone-call"></i>
+  <span>Emergency Help</span>
+</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="header-icon-btn circle-btn" id="rtlToggle"
+        type="button" aria-label="Toggle RTL" title="Toggle RTL">
+        <i data-lucide="arrow-left-right"></i>
+      </button>
+      <button class="header-icon-btn circle-btn" id="themeToggle"
+        type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <i data-lucide="moon" id="themeIcon"></i>
+      </button>
+      <a href="emergency.html" class="header-cta">
+          <i data-lucide="phone-call"></i>
+          Emergency Help
+        </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- SECTION 1: SERVICES HERO -->
+  <section class="services-hero">
+    <div class="services-hero-image">
+      <img src="imges/hero banner.png"
+        alt="Modern secure door lock">
+    </div>
+    <div class="services-hero-overlay"></div>
+
+    <div class="container services-hero-inner">
+      <div class="services-hero-copy reveal">
+        <div class="eyebrow">
+          <span class="eyebrow-line"></span>
+          <i data-lucide="shield-check"></i>
+          Professional Locksmith Services
+        </div>
+
+        <h1>Security Solutions<br>For <span>Every Entry.</span></h1>
+
+        <p>
+          From broken locks and spare keys to vehicle lockouts and
+          commercial access, discover practical locksmith support
+          designed around your security needs.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="service.html" class="btn btn-primary">
+            Explore Services <i data-lucide="arrow-down"></i>
+          </a>
+          <a href="contact.html" class="btn btn-outline">
+            Request Assistance <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+        <div class="services-hero-points">
+          <span><i data-lucide="check-circle-2"></i> Residential</span>
+          <span><i data-lucide="check-circle-2"></i> Automotive</span>
+          <span><i data-lucide="check-circle-2"></i> Commercial</span>
+        </div>
+      </div>
+
+     
+  </section>
+
+  <!-- SECTION 2: SERVICE CATEGORIES -->
+  <section class="section2 service-categories" id="service-categories">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div class="eyebrow dark-eyebrow">
+          <span class="eyebrow-line"></span>
+          What We Do
+        </div>
+        <h2>One Team.<br><span>Multiple Solutions.</span></h2>
+        <p>
+          Explore our main locksmith services and choose the category
+          that best matches your lock, key or access concern.
+        </p>
+      </div>
+
+      <div class="service-category-grid">
+        <article class="category-card reveal">
+          <div class="category-image">
+            <img
+    src="https://volea-store.fr/assets/images/serrurerie-visual-tools-2026.webp"
+    alt="Door Lock, Keys and Locksmith Hardware"
+    loading="lazy"
+>
+            <span class="category-number">01</span>
+          </div>
+          <div class="category-content">
+            <div class="category-icon"><i data-lucide="lock-keyhole"></i></div>
+            <h3>Lock Repair & Replacement</h3>
+            <p>Help with worn, damaged or malfunctioning locks and replacement options.</p>
+            <a href="#lock-repair">Discover service <i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="category-card reveal delay-1">
+          <div class="category-image">
+            <img
+    src="https://images.unsplash.com/photo-1749477417968-2bc986bc6a42?auto=format&fit=crop&w=900&q=85"
+    alt="Locksmith Workshop and Key Cutting Machine"
+    loading="lazy"
+>
+            <span class="category-number">02</span>
+          </div>
+          <div class="category-content">
+            <div class="category-icon"><i data-lucide="key-round"></i></div>
+            <h3>Key Cutting & Duplication</h3>
+            <p>Spare key solutions for everyday home, office and compatible vehicle needs.</p>
+            <a href="#key-services">Discover service <i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="category-card reveal delay-2">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=85"
+              alt="Locking hardware and installation">
+            <span class="category-number">03</span>
+          </div>
+          <div class="category-content">
+            <div class="category-icon"><i data-lucide="shield-check"></i></div>
+            <h3>Lock Installation</h3>
+            <p>Install or upgrade suitable locks to help improve entry-point security.</p>
+            <a href="#lock-installation">Discover service <i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="category-card reveal">
+          <div class="category-image">
+            <img
+    src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=900&q=85"
+    alt="Modern Car Parked Outdoors"
+    loading="lazy"
+>
+            <span class="category-number">04</span>
+          </div>
+          <div class="category-content">
+            <div class="category-icon"><i data-lucide="car-front"></i></div>
+            <h3>Automotive Locksmith</h3>
+            <p>Assistance for vehicle lockouts and suitable key or lock concerns.</p>
+            <a href="#automotive-services">Discover service <i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="category-card reveal delay-1">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"
+              alt="Residential property entrance">
+            <span class="category-number">05</span>
+          </div>
+          <div class="category-content">
+            <div class="category-icon"><i data-lucide="house"></i></div>
+            <h3>Residential Security</h3>
+            <p>Lock and key options for houses, apartments and other residential spaces.</p>
+            <a href="#lock-installation">Discover service <i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="category-card reveal delay-2">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=85"
+              alt="Modern commercial workspace">
+            <span class="category-number">06</span>
+          </div>
+          <div class="category-content">
+            <div class="category-icon"><i data-lucide="building-2"></i></div>
+            <h3>Commercial Security</h3>
+            <p>Lock, key and access support for offices and commercial properties.</p>
+            <a href="#commercial-services">Discover service <i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: LOCK REPAIR FEATURE -->
+  <section class="section2 service-feature" id="lock-repair">
+    <div class="container feature-grid">
+      <div class="feature-visual reveal">
+       <img src="https://images.unsplash.com/photo-1708719018920-06f77778249e?auto=format&fit=crop&w=1200&q=90"
+     alt="Close-up of a Door Lock System">
+
+        <div class="feature-image-label">
+          <span><i data-lucide="wrench"></i></span>
+          <div>
+            <strong>Careful Lock Assessment</strong>
+            <small>Repair or replacement options</small>
+          </div>
+        </div>
+
+        <div class="feature-side-tag">LOCK CARE / 01</div>
+      </div>
+
+      <div class="feature-copy reveal delay-1">
+        <div class="eyebrow dark-eyebrow">
+          <span class="eyebrow-line"></span>
+          Lock Repair & Replacement
+        </div>
+        <h2>When Your Lock<br>Needs <span>Attention.</span></h2>
+        <p>
+          A stiff key, loose handle or lock that no longer operates
+          smoothly can make everyday access difficult. We help you
+          understand the available repair or replacement options.
+        </p>
+
+        <div class="feature-check-list">
+          <div><i data-lucide="check"></i><span>Assessment of common lock problems</span></div>
+          <div><i data-lucide="check"></i><span>Repair options for suitable lock types</span></div>
+          <div><i data-lucide="check"></i><span>Replacement options when needed</span></div>
+          <div><i data-lucide="check"></i><span>Guidance on compatible hardware</span></div>
+        </div>
+
+        <a href="contact.html" class="btn btn-primary">
+          Ask About Lock Repair <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: KEY SERVICES -->
+  <section class="section2 key-services" id="key-services">
+    <div class="container">
+      <div class="key-services-heading reveal">
+        <div>
+          <div class="eyebrow dark-eyebrow">
+            <span class="eyebrow-line"></span>
+            Everyday Access
+          </div>
+          <h2>Keys Made For<br><span>Your Routine.</span></h2>
+        </div>
+      
+      </div>
+
+      <div class="key-service-list">
+        <article class="key-service-item reveal">
+          <div class="key-service-number">01</div>
+          <div class="key-service-icon"><i data-lucide="key"></i></div>
+          <div class="key-service-text">
+            <h3>Standard Key Duplication</h3>
+            <p>Ask about duplicate keys for compatible residential and office locks.</p>
+          </div>
+          <a href="contact.html" aria-label="Enquire about key duplication">
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </article>
+
+        <article class="key-service-item reveal delay-1">
+          <div class="key-service-number">02</div>
+          <div class="key-service-icon"><i data-lucide="key-round"></i></div>
+          <div class="key-service-text">
+            <h3>Lost or Damaged Keys</h3>
+            <p>Discuss available options when a key is missing, bent or no longer usable.</p>
+          </div>
+          <a href="contact.html" aria-label="Enquire about lost keys">
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </article>
+
+        <article class="key-service-item reveal delay-2">
+          <div class="key-service-number">03</div>
+          <div class="key-service-icon"><i data-lucide="car"></i></div>
+          <div class="key-service-text">
+            <h3>Vehicle Key Enquiries</h3>
+            <p>Ask about key-related support for your vehicle make and model.</p>
+          </div>
+          <a href="#automotive-services" aria-label="Explore automotive locksmith services">
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </article>
+
+        <article class="key-service-item reveal">
+          <div class="key-service-number">04</div>
+          <div class="key-service-icon"><i data-lucide="door-open"></i></div>
+          <div class="key-service-text">
+            <h3>Spare Access Keys</h3>
+            <p>Plan ahead with spare keys for approved locks and access systems.</p>
+          </div>
+          <a href="contact.html" aria-label="Enquire about spare keys">
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </article>
+      </div>
+
+      <div class="key-services-note reveal">
+        <i data-lucide="info"></i>
+        <p>Service availability depends on the lock or key type. Contact us to discuss your specific requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: INSTALLATION AND UPGRADES -->
+  <section class="section2 installation-section" id="lock-installation">
+    <div class="container installation-grid">
+      <div class="installation-copy reveal">
+        <div class="eyebrow">
+          <span class="eyebrow-line"></span>
+          Security Upgrades
+        </div>
+        <h2>Better Locks.<br><span>Greater Confidence.</span></h2>
+        <p>
+          The right locking hardware depends on the door, entry point
+          and how the space is used. Explore practical options before
+          choosing an upgrade for your property.
+        </p>
+
+        <div class="upgrade-points">
+          <div>
+            <span class="upgrade-check"><i data-lucide="check"></i></span>
+            <div><h3>Entry Door Locks</h3><p>Discuss suitable lock options for main and secondary doors.</p></div>
+          </div>
+          <div>
+            <span class="upgrade-check"><i data-lucide="check"></i></span>
+            <div><h3>Hardware Replacement</h3><p>Review compatible replacement hardware for your existing setup.</p></div>
+          </div>
+          <div>
+            <span class="upgrade-check"><i data-lucide="check"></i></span>
+            <div><h3>Access Improvements</h3><p>Explore options based on your property and access requirements.</p></div>
+          </div>
+        </div>
+
+        <a href="contact.html" class="btn btn-primary">
+          Discuss An Upgrade <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
+
+      <div class="installation-visual reveal delay-1">
+        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=90"
+          alt="Contemporary residential entrance">
+        <div class="installation-overlay"></div>
+
+        <div class="installation-card">
+          <span class="installation-card-icon"><i data-lucide="shield-check"></i></span>
+          <div>
+            <small>THE RIGHT FIT</small>
+            <h3>Choose hardware<br>with confidence.</h3>
+          </div>
+          <span class="installation-card-line"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: AUTOMOTIVE AND COMMERCIAL SERVICES -->
+  <section class="section2 specialist-services" id="automotive-services">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div class="eyebrow dark-eyebrow">
+          <span class="eyebrow-line"></span>
+          Specialist Support
+        </div>
+        <h2>Support Beyond<br><span>Your Front Door.</span></h2>
+        <p>
+          Lock and access issues can happen at home, on the road or
+          at work. Start with the service category relevant to you.
+        </p>
+      </div>
+
+      <div class="specialist-grid">
+        <article class="specialist-card specialist-auto reveal">
+           <img
+    src="https://images.unsplash.com/photo-1588899428678-f9ea565d91fc?auto=format&fit=crop&w=1200&q=85"
+     alt="Modern Car for Automotive Locksmith Services">
+          <div class="specialist-shade"></div>
+          <div class="specialist-content">
+            <span class="specialist-kicker">01 / AUTOMOTIVE</span>
+            <div class="specialist-icon"><i data-lucide="car-front"></i></div>
+            <h3>Vehicle Lockout<br>Assistance</h3>
+            <p>
+              Contact us about being locked out of your vehicle or
+              needing guidance on a key-related concern.
+            </p>
+            <a href="contact.html">Ask About Vehicle Help <i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+
+        <article class="specialist-card specialist-business reveal delay-1" id="commercial-services">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85"
+     alt="Modern Commercial Office Interior">
+          <div class="specialist-shade"></div>
+          <div class="specialist-content">
+            <span class="specialist-kicker">02 / COMMERCIAL</span>
+            <div class="specialist-icon"><i data-lucide="building-2"></i></div>
+            <h3>Workplace Lock<br>& Access Support</h3>
+            <p>
+              Discuss lock repairs, replacement hardware and access
+              requirements for your business property.
+            </p>
+            <a href="contact.html">Ask About Business Security <i data-lucide="arrow-up-right"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="specialist-bottom reveal">
+        <div class="specialist-bottom-icon"><i data-lucide="messages-square"></i></div>
+        <div>
+          <h3>Not sure which service you need?</h3>
+          <p>Describe your lock or key issue and we'll help you identify the appropriate enquiry.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Talk To Us <i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA: SAME HOME 2 STYLE -->
+  <section class="cta-section">
+    <div class="cta-box">
+      <div class="cta-content">
+        <span class="cta-label">YOUR SECURITY STARTS HERE</span>
+       <h2>Need locksmith services?<br>
+  <span>Let's keep you secure.</span>
+</h2>
+
+<p>
+  From lock repairs and key duplication to emergency lockout assistance,
+  KeyGuard is here to help whenever you need us.
+</p>
+
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary">
+          Contact Us <i data-lucide="arrow-up-right"></i>
+        </a>
+        <a href="tel:+10000000000" class="btn btn-secondary">
+          <i data-lucide="phone"></i> Call Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER: SAME HOME 2 STRUCTURE -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="brand footer-logo">
+        <div class="brand-logo">
+          <img src="imges/logo1.jpeg" alt="KeyGuard Logo">
+        </div>
+        <div class="brand-copy">
+          <span class="brand-name"><span>Key</span><strong>Guard</strong></span>
+          <small class="brand-caption">Secure. Reliable. 24/7.</small>
+        </div>
+      </a>
+
+      <p>Reliable locksmith and key duplication services for homes, vehicles and businesses.</p>
+
+      
+<div class="footer-socials">
+    <a href="#" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="#" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="#" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="#" aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+</div>
+</div>
+
+
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home </a>
+      
+      <a href="service.html">Services</a>
+      <a href="Pricing.html">Pricing</a>
+      <a href="about.html">About Us</a>
+      <a href="about.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Our Services</h3>
+      <a href="#lock-repair">Lock Repair</a>
+      <a href="#key-services">Key Duplication</a>
+      <a href="#lock-installation">Lock Installation</a>
+      <a href="#automotive-services">Car Lockout</a>
+      <a href="#lock-installation">Home Security</a>
+      <a href="#commercial-services">Business Security</a>
+    </div>
+
+    <div class="footer-column footer-contact">
+      <h3>Contact Us</h3>
+      <div><i data-lucide="map-pin"></i><span>123 Security Street<br>City, State</span></div>
+      <div><i data-lucide="phone"></i><span>+1 000 000 0000</span></div>
+      <div><i data-lucide="mail"></i><span>hello@keyguard.com</span></div>
+      <div><i data-lucide="clock-3"></i><span>Emergency Service: 24/7</span></div>
+    </div>
+  </div>
+
+   <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+         <p> © 2026 KeyGuard Locksmith Services. All Rights Reserved.</p>
+        <div>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+</footer>
+
+<script src="services.js"></script>
+</body>
+</html>
+
