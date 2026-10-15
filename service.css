@@ -567,9 +567,10 @@ body.dark-mode .services-hero h1 span {
 .services-hero-copy > p {
   max-width: 590px;
   margin-top: 25px;
-  color: var(--text-soft);
-  font-size: 15px;
+  color: var(--text);
+  font-size: 17px;
   line-height: 1.85;
+  font-weight: bold;
 }
 
 .hero-buttons {
@@ -3493,4 +3494,21 @@ body.rtl .footer-column > a:hover {
     text-decoration: none;
   }
 }
+/* ALL PAGES — MOBILE RTL EYEBROW LINE FIX */
+@media screen and (max-width: 800px) {
+  body.rtl .eyebrow {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    text-align: right;
+  }
 
+  body.rtl .eyebrow .eyebrow-line {
+    flex-shrink: 0;
+  }
+
+  body.rtl .eyebrow i,
+  body.rtl .eyebrow svg {
+    flex-shrink: 0;
+  }
+}

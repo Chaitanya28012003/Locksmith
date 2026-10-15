@@ -882,9 +882,10 @@ body.dark-mode .hero h1 span {
     line-height: 1.8;*/
      max-width: 600px;
   margin-top: 27px;
-  color: var(--text-soft);
-  font-size: 16px;
+  color: var(--text);
+  font-size: 17px;
   line-height: 1.8;
+  font-weight: bold;
 }
 
 
@@ -1114,6 +1115,8 @@ body.dark-mode .trust-icon {
     color: var(--text-soft);
 
     font-size: 13px;
+    font-weight: bold;
+    
 }
 
 
@@ -1272,7 +1275,7 @@ body.dark-mode .why-content h2 span {
 }
 
 .dark-eyebrow {
-    color: var(--secondary);
+    color: var(--secondary-dark);
 }
 
 
@@ -4027,5 +4030,23 @@ body.rtl .security-stamp {
     font-size: 13px;
     font-weight: 700;
     text-decoration: none;
+  }
+}
+/* ALL PAGES — MOBILE RTL EYEBROW LINE FIX */
+@media screen and (max-width: 800px) {
+  body.rtl .eyebrow {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    text-align: right;
+  }
+
+  body.rtl .eyebrow .eyebrow-line {
+    flex-shrink: 0;
+  }
+
+  body.rtl .eyebrow i,
+  body.rtl .eyebrow svg {
+    flex-shrink: 0;
   }
 }

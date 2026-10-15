@@ -531,9 +531,10 @@ body.dark-mode .hero2 h1 span { color: #6EA4D2; }
 .hero2-copy > p {
   max-width: 600px;
   margin-top: 27px;
-  color: var(--text-soft);
-  font-size: 16px;
+  color: var(--text);
+  font-size: 17px;
   line-height: 1.8;
+  font-weight: bold;
 }
 
 .hero-buttons {
@@ -558,8 +559,8 @@ body.dark-mode .hero2 h1 span { color: #6EA4D2; }
 }
 
 .hero2-proof span {
-  color: var(--text-soft);
-  font-size: 12px;
+  color: var(--text);
+  font-size: 13px;
 }
 
 .hero2-note {
@@ -2639,5 +2640,53 @@ body.rtl .footer-column > a:hover { transform: translateX(-3px); }
   body.rtl .hero-buttons,
   body.rtl .hero2-proof {
     justify-content: flex-start;
+  }
+}
+/* ALL PAGES — MOBILE RTL EYEBROW LINE FIX */
+@media screen and (max-width: 800px) {
+  body.rtl .eyebrow {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    text-align: right;
+  }
+
+  body.rtl .eyebrow .eyebrow-line {
+    flex-shrink: 0;
+  }
+
+  body.rtl .eyebrow i,
+  body.rtl .eyebrow svg {
+    flex-shrink: 0;
+  }
+}
+/* HOME 2 — MOBILE HERO IMAGE ALIGNMENT */
+@media screen and (max-width: 800px) {
+  .hero2 {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .hero2-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .hero2-bg img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+  }
+
+  .hero2-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
   }
 }
