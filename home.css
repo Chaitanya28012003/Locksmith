@@ -942,12 +942,13 @@ body.dark-mode .hero h1 span {
 
     color: var(--text);
 
-    border: 1px solid var(--primary);
+    
 }
 
 .btn-primary:hover {
+     
 
-
+ background: #FFD06A;
 
     transform: translateY(-3px);
 
@@ -1271,7 +1272,7 @@ body.dark-mode .why-content h2 span {
 
     color: var(--text-soft);
 
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .dark-eyebrow {
@@ -1472,7 +1473,7 @@ body.dark-mode .why-content h2 span {
 
     line-height: 1.8;
 
-    font-size: 15px;
+    font-size: 16px;
 }
 
 
@@ -1521,7 +1522,7 @@ body.dark-mode .why-content h2 span {
 
     color: var(--text);
 
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .feature-row p {
@@ -1530,7 +1531,7 @@ body.dark-mode .why-content h2 span {
 
     color: var(--text-soft);
 
-    font-size: 12px;
+    font-size: 14px;
 }
 
 
@@ -1558,7 +1559,7 @@ body.dark-mode .why-content h2 span {
 
     background: var(--surface);
 
-    border: 1px solid var(--border);
+    border: 3px solid var(--border);
 
     border-radius: 20px;
 
@@ -1678,7 +1679,7 @@ body.dark-mode .why-content h2 span {
 
     color: var(--text-soft);
 
-    font-size: 13px;
+    font-size: 15px;
 
     line-height: 1.65;
 }
@@ -1695,7 +1696,7 @@ body.dark-mode .why-content h2 span {
 
     color: var(--primary);
 
-    font-size: 12px;
+    font-size: 14px;
 
     font-weight: 800;
 }
@@ -1776,13 +1777,13 @@ body.dark-mode .service-content a {
     display: grid;
     place-items: center;
 
-    border: 2px solid var(--border);
+    border: 3px solid var(--border);
 
     border-radius: 50%;
 
     color: var(--secondary-dark);
 
-    font-size: 11px;
+    font-size: 14px;
 
     font-weight: 800;
 }
@@ -1800,7 +1801,7 @@ body.dark-mode .service-content a {
 
     color: var(--text-soft);
 
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .text-link {
@@ -1935,7 +1936,7 @@ body.dark-mode .text-link {
 
 .security-stamp span {
 
-    font-size: 9px;
+    font-size: 11px;
 
     letter-spacing: 1px;
 
@@ -2067,7 +2068,7 @@ body.dark-mode .price-icon {
 
     color: var(--text-soft);
 
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .price {
@@ -2114,7 +2115,7 @@ body.dark-mode .price {
 
     color: var(--text-soft);
 
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .price-card li svg {
@@ -2312,7 +2313,7 @@ body.dark-mode .price {
     font-weight: 700;
     letter-spacing: 2px;
 
-    color: var(--secondary);
+    color: var(--secondary-dark);
 }
 
 .cta-label::before {
@@ -2337,7 +2338,7 @@ body.dark-mode .price {
 }
 
 .cta-content h2 span {
-    color: var(--secondary);
+    color: var(--secondary-dark);
 }
 
 
@@ -2403,13 +2404,13 @@ body.dark-mode .price {
 /* PRIMARY */
 
 .cta-actions .btn-primary {
-    background: var(--secondary-dark);
+    background: var(--secondary);
     color: var(--text);
-    border: 1px solid var(--primary);
+    
 }
 
 .cta-actions .btn-primary:hover {
-    background: var(--secondary);
+    background: #FFD06A;
     border-color: var(--secondary);
     color: var(--primary);
 
@@ -2721,7 +2722,7 @@ body.dark-mode .cta-actions .btn-secondary:hover {
 
     color: rgba(255,255,255,.68);
 
-    font-size: 12px;
+    font-size: 13px;
 
     transition:
         color .2s ease,
@@ -4048,5 +4049,11 @@ body.rtl .security-stamp {
   body.rtl .eyebrow i,
   body.rtl .eyebrow svg {
     flex-shrink: 0;
+  }
+}
+/* HOME 1 — MOVE RTL & DARK BUTTONS LEFT ON MOBILE */
+@media screen and (max-width: 800px) {
+  body.rtl .header-actions {
+    transform: translateX(-48px);
   }
 }

@@ -428,7 +428,7 @@ body.dark-mode .key-services-heading h2 span {
   margin-top: 19px;
   max-width: 620px;
   color: var(--text-soft);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .btn {
@@ -452,7 +452,7 @@ body.dark-mode .key-services-heading h2 span {
 .btn-primary {
   background: var(--secondary);
   color: #17202A;
-  border: 1px solid var(--primary);
+  
 }
 
 .btn-primary:hover {
@@ -737,7 +737,7 @@ body.dark-mode .hero-floating-card {
 .category-card {
   min-width: 0;
   overflow: hidden;
-  border: 1px solid var(--border);
+  border: 1px solid var(--primary);
   border-radius: 20px;
   background: var(--surface);
   transition: transform .35s ease, box-shadow .35s ease,
@@ -778,7 +778,7 @@ body.dark-mode .hero-floating-card {
   border-radius: 50%;
   background: rgba(22,58,95,.93);
   color: #FFFFFF;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 800;
 }
 
@@ -816,7 +816,7 @@ body.dark-mode .hero-floating-card {
   min-height: 62px;
   margin-top: 12px;
   color: var(--text-soft);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.75;
 }
 
@@ -826,7 +826,7 @@ body.dark-mode .hero-floating-card {
   align-items: center;
   gap: 7px;
   color: var(--primary);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
 }
 
@@ -900,13 +900,13 @@ body.dark-mode .category-content > a {
 
 .feature-image-label strong {
   color: var(--text);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .feature-image-label small {
   margin-top: 4px;
   color: var(--text-soft);
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .feature-side-tag {
@@ -929,7 +929,7 @@ body.dark-mode .category-content > a {
 .feature-copy > p {
   margin-top: 21px;
   color: var(--text-soft);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.9;
 }
 
@@ -944,7 +944,7 @@ body.dark-mode .category-content > a {
   align-items: center;
   gap: 11px;
   color: var(--text);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -1314,7 +1314,7 @@ body.dark-mode .key-service-item > a {
 
 .specialist-kicker {
   color: var(--secondary);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: 1.8px;
 }
@@ -1356,7 +1356,7 @@ body.dark-mode .key-service-item > a {
   align-items: center;
   gap: 8px;
   color: var(--secondary);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
 }
 
@@ -1504,13 +1504,13 @@ body.dark-mode .cta-content h2 span {
 }
 
 .cta-actions .btn-primary {
-  background: var(--secondary-dark);
+  background: var(--secondary);
   color: #17202A;
-  border: 1px solid var(--primary);
+  
 }
 
 .cta-actions .btn-primary:hover {
-  background: var(--secondary);
+   background: #FFD06A;
   border-color: var(--secondary);
   color: var(--primary);
   transform: translateY(-2px);
@@ -1630,7 +1630,7 @@ body.dark-mode .cta-actions .btn-secondary {
 .footer-column > a {
   margin-bottom: 10px;
   color: rgba(255,255,255,.68);
-  font-size: 12px;
+  font-size: 13px;
   transition: color .2s ease, transform .2s ease;
 }
 
